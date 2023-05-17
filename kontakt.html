@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+    <html lang="hr">
+        <head>
+            <meta name="viewport" content="with=device-width, initial-scale=1.0">
+            <title>MLS gradnja</title>
+            <link rel="stylesheet" href="CSS.css">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+        </head>
+        <body>
+            <section class="sub-header">
+                <nav>  
+                    <a href="index.html"><img src="slike/logo.png" alt="Logo"></a>
+                    <div class="nav-links" id="navLinks">
+                        <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                        <ul>
+                            <li><a href="index.html">HOME</a></li>
+                            <li><a href="galerija.html">GALERIJA</a></li>
+                            <li><a href="usluge.html">USLUGE</a></li>
+                            <li><a href="kontakt.html">KONTAKT</a></li>
+                        </ul>
+                    </div>
+                    <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+                </nav>
+                    <h1>Kotaktirajte nas</h1>
+            </section>
+    
+            <!----------------FORMA------------->
+            <section class="location">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2796.970686618778!2d16.98672381580409!3d45.49053503970642!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47670922762bd1c3%3A0x8ef47c4639be760b!2sPoljanska%2066%2C%2034543%2C%20Antunovac!5e0!3m2!1shr!2shr!4v1677604367078!5m2!1shr!2shr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
+            <section class="contact-us">
+                <div class="row">
+                    <div class="contact-col">
+                        <div>
+                            <i class="fa fa-home"></i>
+                            <span>
+                                <h5>Poljanska 66</h5>
+                                <p>Poljanska 66, 34543, Antunovac</p>
+                            </span>
+                        </div>
+                        <div>
+                            <i class="fa fa-phone"></i>
+                            <span>
+                                <h5>+385 98 813 746</h5>
+                                <p>Pon-pet, 8:00-21:00</p>
+                            </span>
+                        </div>
+                        <div>
+                            <i class="fa fa-envelope"></i>
+                            <span>
+                                <h5>danijelpilat24@gmail.com</h5>
+                                <p>Pošaljite mail</p>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="contact-col">
+                        <form action="upravljaj.php" method="post">
+                            <input type="text" name="name" placeholder="Ime" required>
+                            <input type="email" name="email" placeholder="Email" required>
+                            <input type="text" name="subjekt" placeholder="Predmet" required>
+                            <textarea rows="8" name="poruka" placeholder="Tekst" required></textarea>
+                            <button type="submit" class="hero-btn nama_btn">Pošalji poruku</button>
+                        </form> 
+                    </div>
+                </div>
+            </section>
+
+            
+            
+            <!--------FOOTER--------->
+            <section class="footer">
+                <h4>O nama</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi a gravida massa.<br>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                </p>
+                <div class="icons">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+                <p>Made with <i class="fa-regular fa-heart"></i> by Lara S.</p>
+            </section>
+    
+            <script src="script.js"></script>
+    
+        </body>
+    </html>

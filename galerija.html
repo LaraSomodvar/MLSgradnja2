@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+    <html lang="hr">
+        <head>
+            <meta name="viewport" content="with=device-width, initial-scale=1.0">
+            <title>MLS gradnja</title>
+            <link rel="stylesheet" href="CSS.css">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+        </head>
+        <body>
+            <section class="sub-header">
+                <nav>
+                    <a href="index.html"><img src="slike/logo.png" alt="Logo"></a>
+                    <div class="nav-links" id="navLinks">
+                        <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                        <ul>
+                            <li><a href="index.html">HOME</a></li>
+                            <li><a href="galerija.html">GALERIJA</a></li>
+                            <li><a href="usluge.html">USLUGE</a></li>
+                            <li><a href="kontakt.html">KONTAKT</a></li>
+                        </ul>
+                    </div>
+                    <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+                </nav>
+                <h1>Galerija naših radova</h1>
+            </section>
+    
+            <section class="galerija">
+                <div class="full_img" id="fullImgBox">
+                    <img src="slike/dvoriste1_1.jpg" id="fullImg">
+                    <span onclick="closeFullImg()">X</span>
+                </div>
+                <div class="img_galerija">
+                        <img src="slike/dvoriste1_1.jpg" onclick="openFullImg(this.src)">
+                        <img src="slike/fasada1_2.jpg" onclick="openFullImg(this.src)">
+                        <img src="slike/kuca1_4.jpg" onclick="openFullImg(this.src)">
+                        <img src="slike/parket1_2.jpg" onclick="openFullImg(this.src)">
+                        <img src="slike/pecara2_3.jpg" onclick="openFullImg(this.src)">
+                        <img src="slike/prozor1_1.jpg" onclick="openFullImg(this.src)">
+                        <img src="slike/slika9.jpg" onclick="openFullImg(this.src)">
+                        <img src="slike/slika21.jpg" onclick="openFullImg(this.src)">
+                        <img src="slike/slika16.jpg" onclick="openFullImg(this.src)">
+                        <img src="slike/pecara1_3.jpg" onclick="openFullImg(this.src)">
+                </div>
+            </section>
+            
+            <!--------FOOTER--------->
+            <section class="footer">
+                <h4>O nama</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi a gravida massa.<br>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                </p>
+                <div class="icons">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+                <p>Made with <i class="fa-regular fa-heart"></i> by Lara S.</p>
+            </section>
+    
+            <script src="script.js"> </script>
+    
+        </body>
+    </html>
